@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TestOperation.h"
 
-@interface MultithreadingSecondViewController : UIViewController
+@interface MultithreadingSecondViewController : UIViewController <TestOperationDelegate>{
+    NSOperationQueue* _queue;
+}
 
 @end

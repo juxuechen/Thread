@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		860CF1FF1519CF35008C4747 /* TestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 860CF1FE1519CF35008C4747 /* TestOperation.m */; };
+		867B965B151AC83400A3E55A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867B965A151AC83400A3E55A /* QuartzCore.framework */; };
 		86DD91661517197400EDF822 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86DD91651517197400EDF822 /* UIKit.framework */; };
 		86DD91681517197400EDF822 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86DD91671517197400EDF822 /* Foundation.framework */; };
 		86DD916A1517197400EDF822 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86DD91691517197400EDF822 /* CoreGraphics.framework */; };
@@ -24,21 +26,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		860CF1FD1519CF35008C4747 /* TestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestOperation.h; sourceTree = "<group>"; };
+		860CF1FE1519CF35008C4747 /* TestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestOperation.m; sourceTree = "<group>"; };
+		867B965A151AC83400A3E55A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		86DD91611517197400EDF822 /* Multithreading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Multithreading.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86DD91651517197400EDF822 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		86DD91671517197400EDF822 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		86DD91691517197400EDF822 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		86DD916D1517197400EDF822 /* Multithreading-Info.plist */ = {isa = PBXFileReference; path = "Multithreading-Info.plist"; sourceTree = "<group>"; };
+		86DD916D1517197400EDF822 /* Multithreading-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Multithreading-Info.plist"; sourceTree = "<group>"; };
 		86DD916F1517197400EDF822 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		86DD91711517197400EDF822 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		86DD91731517197400EDF822 /* Multithreading-Prefix.pch */ = {isa = PBXFileReference; path = "Multithreading-Prefix.pch"; sourceTree = "<group>"; };
-		86DD91741517197400EDF822 /* MultithreadingAppDelegate.h */ = {isa = PBXFileReference; path = MultithreadingAppDelegate.h; sourceTree = "<group>"; };
+		86DD91731517197400EDF822 /* Multithreading-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Multithreading-Prefix.pch"; sourceTree = "<group>"; };
+		86DD91741517197400EDF822 /* MultithreadingAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultithreadingAppDelegate.h; sourceTree = "<group>"; };
 		86DD91751517197400EDF822 /* MultithreadingAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultithreadingAppDelegate.m; sourceTree = "<group>"; };
-		86DD91771517197400EDF822 /* MultithreadingFirstViewController.h */ = {isa = PBXFileReference; path = MultithreadingFirstViewController.h; sourceTree = "<group>"; };
+		86DD91771517197400EDF822 /* MultithreadingFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultithreadingFirstViewController.h; sourceTree = "<group>"; };
 		86DD91781517197400EDF822 /* MultithreadingFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultithreadingFirstViewController.m; sourceTree = "<group>"; };
 		86DD917A1517197400EDF822 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		86DD917C1517197400EDF822 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		86DD917E1517197400EDF822 /* MultithreadingSecondViewController.h */ = {isa = PBXFileReference; path = MultithreadingSecondViewController.h; sourceTree = "<group>"; };
+		86DD917E1517197400EDF822 /* MultithreadingSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultithreadingSecondViewController.h; sourceTree = "<group>"; };
 		86DD917F1517197400EDF822 /* MultithreadingSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultithreadingSecondViewController.m; sourceTree = "<group>"; };
 		86DD91811517197400EDF822 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		86DD91831517197400EDF822 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
@@ -51,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				867B965B151AC83400A3E55A /* QuartzCore.framework in Frameworks */,
 				86DD91661517197400EDF822 /* UIKit.framework in Frameworks */,
 				86DD91681517197400EDF822 /* Foundation.framework in Frameworks */,
 				86DD916A1517197400EDF822 /* CoreGraphics.framework in Frameworks */,
@@ -80,6 +86,7 @@
 		86DD91641517197400EDF822 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				867B965A151AC83400A3E55A /* QuartzCore.framework */,
 				86DD91651517197400EDF822 /* UIKit.framework */,
 				86DD91671517197400EDF822 /* Foundation.framework */,
 				86DD91691517197400EDF822 /* CoreGraphics.framework */,
@@ -94,14 +101,16 @@
 				86DD91751517197400EDF822 /* MultithreadingAppDelegate.m */,
 				86DD91771517197400EDF822 /* MultithreadingFirstViewController.h */,
 				86DD91781517197400EDF822 /* MultithreadingFirstViewController.m */,
+				86DD91851517197400EDF822 /* MultithreadingFirstViewController.xib */,
 				86DD917A1517197400EDF822 /* first.png */,
 				86DD917C1517197400EDF822 /* first@2x.png */,
 				86DD917E1517197400EDF822 /* MultithreadingSecondViewController.h */,
 				86DD917F1517197400EDF822 /* MultithreadingSecondViewController.m */,
+				86DD91881517197400EDF822 /* MultithreadingSecondViewController.xib */,
 				86DD91811517197400EDF822 /* second.png */,
 				86DD91831517197400EDF822 /* second@2x.png */,
-				86DD91851517197400EDF822 /* MultithreadingFirstViewController.xib */,
-				86DD91881517197400EDF822 /* MultithreadingSecondViewController.xib */,
+				860CF1FD1519CF35008C4747 /* TestOperation.h */,
+				860CF1FE1519CF35008C4747 /* TestOperation.m */,
 				86DD916C1517197400EDF822 /* Supporting Files */,
 			);
 			path = Multithreading;
@@ -189,6 +198,7 @@
 				86DD91761517197400EDF822 /* MultithreadingAppDelegate.m in Sources */,
 				86DD91791517197400EDF822 /* MultithreadingFirstViewController.m in Sources */,
 				86DD91801517197400EDF822 /* MultithreadingSecondViewController.m in Sources */,
+				860CF1FF1519CF35008C4747 /* TestOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +318,7 @@
 				86DD918F1517197400EDF822 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
