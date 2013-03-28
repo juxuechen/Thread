@@ -7,6 +7,7 @@
 //
 
 #import "SecondViewController.h"
+#import "TestOperation.h"
 
 @interface SecondViewController ()
 
@@ -36,21 +37,26 @@
     
     //堵塞主线程了，UI无法及时。。。。
     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
-    for (int j = 0; j < 10; j++) {
-        NSInvocationOperation *op = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(addView:) object:[NSNumber numberWithInt:j]];
+    [queue setMaxConcurrentOperationCount:5];
+    for (int j = 1; j <= 20; j++) {
+        TestOperation *op = [[TestOperation alloc] initWithTarget:self selector:@selector(addView:) object:[NSNumber numberWithInt:j]];
+        op.i = j;
         [queue addOperation:op];
     }
 }
 
 - (void)addView:(NSNumber *)num{
     @synchronized(self){
+        NSLog(@"第%d个进来",[num intValue]);
         int j = [num intValue];
-        NSLog(@"num %@",num);
-        UILabel *label= [[UILabel alloc] initWithFrame:CGRectMake(60, 10 + 20 * (j++), 200, 10)];
+        UILabel *label= [[UILabel alloc] initWithFrame:CGRectMake(60, 12 + 15 * serialNumber, 200, 12)];
         label.backgroundColor = [UIColor greenColor];
-        label.text = [NSString stringWithFormat:@"第%d个执行",serialNumber++];
+        label.text = [NSString stringWithFormat:@"%d是第%d个添加上界面",j,serialNumber];
+        label.font = [UIFont systemFontOfSize:12.];
+        serialNumber++;
         
-        [self.view addSubview:label];
+        [self.view performSelectorOnMainThread:@selector(addSubview:) withObject:label waitUntilDone:NO];
+        //waitUntilDone是表示是否阻塞子线程
     }
 }
 

@@ -8,18 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol TestOperationDelegate 
 
-@required
-- (void)addView:(UIView *)view num:(int)num;
+@interface TestOperation : NSInvocationOperation
 
-@end
-
-@interface TestOperation : NSInvocationOperation{
-    id<TestOperationDelegate>  delegate;
-    int i;
-}
-
-- (id)initWithDelegate:(id)d num:(int)num;
+@property (nonatomic,assign) int i;
 
 @end
