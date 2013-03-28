@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MultithreadingFirstViewController : UIViewController {
+@interface FirstViewController : UIViewController {
     int i;
     NSCondition *codition;
     
@@ -17,6 +17,7 @@
 }
 
 @property (nonatomic,strong) IBOutlet UIView *waitingView;
+@property (nonatomic,strong) IBOutlet UILabel *waitingLabel;
 @property (nonatomic,strong) IBOutlet UIActivityIndicatorView *activityView;
 
 - (IBAction)selectA:(id)sender;

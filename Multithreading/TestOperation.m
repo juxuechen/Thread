@@ -12,7 +12,7 @@
 @implementation TestOperation
 
 - (id)initWithDelegate:(id)d num:(int)num {
-    if ((self = [super init])) {
+    if (self) {
         delegate = d;
         i = num;
     }

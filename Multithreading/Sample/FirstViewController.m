@@ -6,9 +6,9 @@
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import "MultithreadingFirstViewController.h"
+#import "FirstViewController.h"
 
-@implementation MultithreadingFirstViewController
+@implementation FirstViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -16,6 +16,8 @@
     if (self) {
         self.title = NSLocalizedString(@"thread", @"thread");
         self.tabBarItem.image = [UIImage imageNamed:@"first"];
+        
+        sem = dispatch_semaphore_create(0);
     }
     return self;
 }
@@ -87,16 +89,6 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
-    
-    
-    void (^hello)(char*);
-    hello = ^(char* str) {
-        NSLog(@"hello %s", str);
-    };
-    hello("robin");
-    
-    
     
     [[NSNotificationCenter defaultCenter] addObserver:self 
                                              selector:@selector(treadObserver) 
@@ -190,14 +182,9 @@
     NSLog(@"全部遍历执行结束");
 }
 
-- (void)timerEnd {
-    NSLog(@"计时结束");
-    
-}
 
 - (IBAction)selectA:(id)sender {
     NSLog(@"选择A");
-    self.waitingView.hidden = NO;
     
     sem = dispatch_semaphore_create(0);
     dispatch_async(queue, ^(void) {
@@ -210,12 +197,15 @@
                 sum += aa;
         }
         NSLog(@" >> Sum: %d", sum);
+        NSLog(@"计时结束");
+        
         dispatch_semaphore_signal(sem);
     });
 }
 
 - (IBAction)selectB:(id)sender {
     NSLog(@"选择B");
+    self.waitingView.hidden = NO;
 
 //    dispatch_semaphore_wait(sem, DISPATCH_TIME_FOREVER);
 //    NSLog(@"等待结束");

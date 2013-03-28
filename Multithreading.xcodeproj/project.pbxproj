@@ -9,26 +9,35 @@
 /* Begin PBXBuildFile section */
 		860CF1FF1519CF35008C4747 /* TestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 860CF1FE1519CF35008C4747 /* TestOperation.m */; };
 		867B965B151AC83400A3E55A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867B965A151AC83400A3E55A /* QuartzCore.framework */; };
+		86D73293170419E6007A4F04 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D73291170419E6007A4F04 /* MainViewController.m */; };
+		86D73294170419E6007A4F04 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86D73292170419E6007A4F04 /* MainViewController.xib */; };
+		86D7329917041C91007A4F04 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D7329717041C91007A4F04 /* FirstViewController.m */; };
+		86D7329A17041C91007A4F04 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86D7329817041C91007A4F04 /* FirstViewController.xib */; };
+		86D7329E17041CB1007A4F04 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D7329C17041CB1007A4F04 /* SecondViewController.m */; };
+		86D7329F17041CB1007A4F04 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86D7329D17041CB1007A4F04 /* SecondViewController.xib */; };
 		86DD91661517197400EDF822 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86DD91651517197400EDF822 /* UIKit.framework */; };
 		86DD91681517197400EDF822 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86DD91671517197400EDF822 /* Foundation.framework */; };
 		86DD916A1517197400EDF822 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86DD91691517197400EDF822 /* CoreGraphics.framework */; };
 		86DD91701517197400EDF822 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86DD916E1517197400EDF822 /* InfoPlist.strings */; };
 		86DD91721517197400EDF822 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DD91711517197400EDF822 /* main.m */; };
 		86DD91761517197400EDF822 /* MultithreadingAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DD91751517197400EDF822 /* MultithreadingAppDelegate.m */; };
-		86DD91791517197400EDF822 /* MultithreadingFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DD91781517197400EDF822 /* MultithreadingFirstViewController.m */; };
-		86DD917B1517197400EDF822 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 86DD917A1517197400EDF822 /* first.png */; };
-		86DD917D1517197400EDF822 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86DD917C1517197400EDF822 /* first@2x.png */; };
 		86DD91801517197400EDF822 /* MultithreadingSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DD917F1517197400EDF822 /* MultithreadingSecondViewController.m */; };
-		86DD91821517197400EDF822 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 86DD91811517197400EDF822 /* second.png */; };
-		86DD91841517197400EDF822 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86DD91831517197400EDF822 /* second@2x.png */; };
-		86DD91871517197400EDF822 /* MultithreadingFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86DD91851517197400EDF822 /* MultithreadingFirstViewController.xib */; };
 		86DD918A1517197400EDF822 /* MultithreadingSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86DD91881517197400EDF822 /* MultithreadingSecondViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		860CF1FD1519CF35008C4747 /* TestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestOperation.h; sourceTree = "<group>"; };
-		860CF1FE1519CF35008C4747 /* TestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestOperation.m; sourceTree = "<group>"; };
+		860CF1FD1519CF35008C4747 /* TestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestOperation.h; path = ../TestOperation.h; sourceTree = "<group>"; };
+		860CF1FE1519CF35008C4747 /* TestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestOperation.m; path = ../TestOperation.m; sourceTree = "<group>"; };
 		867B965A151AC83400A3E55A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		86D73290170419E6007A4F04 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		86D73291170419E6007A4F04 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		86D73292170419E6007A4F04 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		86D7329617041C91007A4F04 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		86D7329717041C91007A4F04 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		86D7329817041C91007A4F04 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		86D7329B17041CB1007A4F04 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		86D7329C17041CB1007A4F04 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		86D7329D17041CB1007A4F04 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 		86DD91611517197400EDF822 /* Multithreading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Multithreading.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86DD91651517197400EDF822 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		86DD91671517197400EDF822 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -39,15 +48,8 @@
 		86DD91731517197400EDF822 /* Multithreading-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Multithreading-Prefix.pch"; sourceTree = "<group>"; };
 		86DD91741517197400EDF822 /* MultithreadingAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultithreadingAppDelegate.h; sourceTree = "<group>"; };
 		86DD91751517197400EDF822 /* MultithreadingAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultithreadingAppDelegate.m; sourceTree = "<group>"; };
-		86DD91771517197400EDF822 /* MultithreadingFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultithreadingFirstViewController.h; sourceTree = "<group>"; };
-		86DD91781517197400EDF822 /* MultithreadingFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultithreadingFirstViewController.m; sourceTree = "<group>"; };
-		86DD917A1517197400EDF822 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		86DD917C1517197400EDF822 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		86DD917E1517197400EDF822 /* MultithreadingSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultithreadingSecondViewController.h; sourceTree = "<group>"; };
 		86DD917F1517197400EDF822 /* MultithreadingSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultithreadingSecondViewController.m; sourceTree = "<group>"; };
-		86DD91811517197400EDF822 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		86DD91831517197400EDF822 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
-		86DD91861517197400EDF822 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MultithreadingFirstViewController.xib; sourceTree = "<group>"; };
 		86DD91891517197400EDF822 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MultithreadingSecondViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +68,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		86D7329517041C91007A4F04 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				86D7329617041C91007A4F04 /* FirstViewController.h */,
+				86D7329717041C91007A4F04 /* FirstViewController.m */,
+				86D7329817041C91007A4F04 /* FirstViewController.xib */,
+				86D7329B17041CB1007A4F04 /* SecondViewController.h */,
+				86D7329C17041CB1007A4F04 /* SecondViewController.m */,
+				86D7329D17041CB1007A4F04 /* SecondViewController.xib */,
+				860CF1FD1519CF35008C4747 /* TestOperation.h */,
+				860CF1FE1519CF35008C4747 /* TestOperation.m */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
 		86DD91561517197400EDF822 = {
 			isa = PBXGroup;
 			children = (
@@ -99,18 +116,13 @@
 			children = (
 				86DD91741517197400EDF822 /* MultithreadingAppDelegate.h */,
 				86DD91751517197400EDF822 /* MultithreadingAppDelegate.m */,
-				86DD91771517197400EDF822 /* MultithreadingFirstViewController.h */,
-				86DD91781517197400EDF822 /* MultithreadingFirstViewController.m */,
-				86DD91851517197400EDF822 /* MultithreadingFirstViewController.xib */,
-				86DD917A1517197400EDF822 /* first.png */,
-				86DD917C1517197400EDF822 /* first@2x.png */,
+				86D73290170419E6007A4F04 /* MainViewController.h */,
+				86D73291170419E6007A4F04 /* MainViewController.m */,
+				86D73292170419E6007A4F04 /* MainViewController.xib */,
+				86D7329517041C91007A4F04 /* Sample */,
 				86DD917E1517197400EDF822 /* MultithreadingSecondViewController.h */,
 				86DD917F1517197400EDF822 /* MultithreadingSecondViewController.m */,
 				86DD91881517197400EDF822 /* MultithreadingSecondViewController.xib */,
-				86DD91811517197400EDF822 /* second.png */,
-				86DD91831517197400EDF822 /* second@2x.png */,
-				860CF1FD1519CF35008C4747 /* TestOperation.h */,
-				860CF1FE1519CF35008C4747 /* TestOperation.m */,
 				86DD916C1517197400EDF822 /* Supporting Files */,
 			);
 			path = Multithreading;
@@ -178,12 +190,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				86DD91701517197400EDF822 /* InfoPlist.strings in Resources */,
-				86DD917B1517197400EDF822 /* first.png in Resources */,
-				86DD917D1517197400EDF822 /* first@2x.png in Resources */,
-				86DD91821517197400EDF822 /* second.png in Resources */,
-				86DD91841517197400EDF822 /* second@2x.png in Resources */,
-				86DD91871517197400EDF822 /* MultithreadingFirstViewController.xib in Resources */,
 				86DD918A1517197400EDF822 /* MultithreadingSecondViewController.xib in Resources */,
+				86D73294170419E6007A4F04 /* MainViewController.xib in Resources */,
+				86D7329A17041C91007A4F04 /* FirstViewController.xib in Resources */,
+				86D7329F17041CB1007A4F04 /* SecondViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,9 +206,11 @@
 			files = (
 				86DD91721517197400EDF822 /* main.m in Sources */,
 				86DD91761517197400EDF822 /* MultithreadingAppDelegate.m in Sources */,
-				86DD91791517197400EDF822 /* MultithreadingFirstViewController.m in Sources */,
 				86DD91801517197400EDF822 /* MultithreadingSecondViewController.m in Sources */,
 				860CF1FF1519CF35008C4747 /* TestOperation.m in Sources */,
+				86D73293170419E6007A4F04 /* MainViewController.m in Sources */,
+				86D7329917041C91007A4F04 /* FirstViewController.m in Sources */,
+				86D7329E17041CB1007A4F04 /* SecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,14 +223,6 @@
 				86DD916F1517197400EDF822 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		86DD91851517197400EDF822 /* MultithreadingFirstViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				86DD91861517197400EDF822 /* en */,
-			);
-			name = MultithreadingFirstViewController.xib;
 			sourceTree = "<group>";
 		};
 		86DD91881517197400EDF822 /* MultithreadingSecondViewController.xib */ = {

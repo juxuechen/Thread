@@ -7,13 +7,26 @@
          shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "Multithreading/MultithreadingFirstViewController.m"
-         timestampString = "385372043.193955"
+         filePath = "Multithreading/TestOperation.m"
+         timestampString = "386146622.345784"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "194"
-         endingLineNumber = "194"
-         landmarkName = "-timerEnd"
+         startingLineNumber = "28"
+         endingLineNumber = "28"
+         landmarkName = "-start"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Multithreading/TestOperation.m"
+         timestampString = "386146622.345784"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "14"
+         endingLineNumber = "14"
+         landmarkName = "-initWithDelegate:num:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

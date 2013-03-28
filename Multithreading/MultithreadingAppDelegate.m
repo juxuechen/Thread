@@ -7,26 +7,23 @@
 //
 
 #import "MultithreadingAppDelegate.h"
+#import "MainViewController.h"
 
-#import "MultithreadingFirstViewController.h"
+#import "FirstViewController.h"
 
 #import "MultithreadingSecondViewController.h"
 
 
 @implementation MultithreadingAppDelegate
 
-@synthesize window = _window;
-@synthesize tabBarController = _tabBarController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    UIViewController *viewController1 = [[MultithreadingFirstViewController alloc] initWithNibName:@"MultithreadingFirstViewController" bundle:nil];
-    UIViewController *viewController2 = [[MultithreadingSecondViewController alloc] initWithNibName:@"MultithreadingSecondViewController" bundle:nil];
-    self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, nil];
-    self.window.rootViewController = self.tabBarController;
+    MainViewController *mainViewController = [[MainViewController alloc] init];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:mainViewController];
+    self.window.rootViewController = navController;
     [self.window makeKeyAndVisible];
     return YES;
 }
