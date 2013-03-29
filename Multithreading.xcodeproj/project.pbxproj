@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		860CF1FF1519CF35008C4747 /* TestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 860CF1FE1519CF35008C4747 /* TestOperation.m */; };
+		86183159170568E100638985 /* TestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 86183158170568E100638985 /* TestOperation.m */; };
 		867B965B151AC83400A3E55A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867B965A151AC83400A3E55A /* QuartzCore.framework */; };
 		86D73293170419E6007A4F04 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D73291170419E6007A4F04 /* MainViewController.m */; };
 		86D73294170419E6007A4F04 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86D73292170419E6007A4F04 /* MainViewController.xib */; };
@@ -26,8 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		860CF1FD1519CF35008C4747 /* TestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestOperation.h; path = ../TestOperation.h; sourceTree = "<group>"; };
-		860CF1FE1519CF35008C4747 /* TestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestOperation.m; path = ../TestOperation.m; sourceTree = "<group>"; };
+		86183157170568E100638985 /* TestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestOperation.h; sourceTree = "<group>"; };
+		86183158170568E100638985 /* TestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestOperation.m; sourceTree = "<group>"; };
 		867B965A151AC83400A3E55A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		86D73290170419E6007A4F04 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		86D73291170419E6007A4F04 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
@@ -77,8 +77,8 @@
 				86D7329B17041CB1007A4F04 /* SecondViewController.h */,
 				86D7329C17041CB1007A4F04 /* SecondViewController.m */,
 				86D7329D17041CB1007A4F04 /* SecondViewController.xib */,
-				860CF1FD1519CF35008C4747 /* TestOperation.h */,
-				860CF1FE1519CF35008C4747 /* TestOperation.m */,
+				86183157170568E100638985 /* TestOperation.h */,
+				86183158170568E100638985 /* TestOperation.m */,
 			);
 			path = Sample;
 			sourceTree = "<group>";
@@ -207,10 +207,10 @@
 				86DD91721517197400EDF822 /* main.m in Sources */,
 				86DD91761517197400EDF822 /* MultithreadingAppDelegate.m in Sources */,
 				86DD91801517197400EDF822 /* MultithreadingSecondViewController.m in Sources */,
-				860CF1FF1519CF35008C4747 /* TestOperation.m in Sources */,
 				86D73293170419E6007A4F04 /* MainViewController.m in Sources */,
 				86D7329917041C91007A4F04 /* FirstViewController.m in Sources */,
 				86D7329E17041CB1007A4F04 /* SecondViewController.m in Sources */,
+				86183159170568E100638985 /* TestOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
