@@ -40,6 +40,7 @@
 }
 
 - (void)updateLabel1Text:(NSString *)text{
+    //到主线程更新数据
     dispatch_async(dispatch_get_main_queue(), ^{
         self.label1.text = [self.label1.text stringByAppendingString:text];
     });

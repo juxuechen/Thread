@@ -59,43 +59,6 @@
     
     dispatch_queue_t myCustomQueue;
     myCustomQueue = dispatch_queue_create("com.example.MyCustomQueue", NULL);
-    
-    //后台处理数据，然后回到主界面更新UI
-    /*dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        NSLog(@"在全局并发队列做一些事情");
-        dispatch_async(dispatch_get_main_queue(), ^{
-            NSLog(@"回到主线程中");
-        });
-    });
-    
-    //先从主线程取数据，然后在后台动作。
-    dispatch_queue_t bgQueue = myCustomQueue;
-    dispatch_async(dispatch_get_main_queue(), ^{
-        NSLog(@"get view data");
-        dispatch_async(bgQueue, ^{
-            NSLog(@"use stringValue in the background now");
-        });
-    });
-    
-    //提交一个队列的Job   在全局并发队列
-    //调用dispatch_async函数，传入一个队列和一个block。
-    //队列会在轮到这个block执行时执行这个block的代码。
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        NSLog(@"提交一个队列的Job1");
-    });
-    
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        NSLog(@"提交一个队列的Job2");
-    });
-    
-    
-    __block NSString *stringValue;
-    dispatch_sync(bgQueue, ^{
-        stringValue = @"完成了";
-    });
-    NSLog(@"%@",stringValue);*/
-
-    
     queue = dispatch_queue_create("SumBlocks", NULL);
 }
 
