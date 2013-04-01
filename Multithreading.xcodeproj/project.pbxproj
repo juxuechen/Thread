@@ -12,6 +12,8 @@
 		8618315E170571E500638985 /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8618315C170571E500638985 /* ThirdViewController.xib */; };
 		861831601705727200638985 /* SampleList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8618315F1705727200638985 /* SampleList.plist */; };
 		867B965B151AC83400A3E55A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867B965A151AC83400A3E55A /* QuartzCore.framework */; };
+		86C87DF51709688A00D571EC /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C87DF31709688A00D571EC /* FourthViewController.m */; };
+		86C87DF61709688A00D571EC /* FourthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86C87DF41709688A00D571EC /* FourthViewController.xib */; };
 		86D73293170419E6007A4F04 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D73291170419E6007A4F04 /* MainViewController.m */; };
 		86D73294170419E6007A4F04 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86D73292170419E6007A4F04 /* MainViewController.xib */; };
 		86D7329917041C91007A4F04 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D7329717041C91007A4F04 /* FirstViewController.m */; };
@@ -36,6 +38,9 @@
 		8618315C170571E500638985 /* ThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
 		8618315F1705727200638985 /* SampleList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SampleList.plist; sourceTree = "<group>"; };
 		867B965A151AC83400A3E55A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		86C87DF21709688A00D571EC /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
+		86C87DF31709688A00D571EC /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
+		86C87DF41709688A00D571EC /* FourthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FourthViewController.xib; sourceTree = "<group>"; };
 		86D73290170419E6007A4F04 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		86D73291170419E6007A4F04 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		86D73292170419E6007A4F04 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
@@ -89,6 +94,9 @@
 				8618315A170571E500638985 /* ThirdViewController.h */,
 				8618315B170571E500638985 /* ThirdViewController.m */,
 				8618315C170571E500638985 /* ThirdViewController.xib */,
+				86C87DF21709688A00D571EC /* FourthViewController.h */,
+				86C87DF31709688A00D571EC /* FourthViewController.m */,
+				86C87DF41709688A00D571EC /* FourthViewController.xib */,
 			);
 			path = Sample;
 			sourceTree = "<group>";
@@ -207,6 +215,7 @@
 				86D7329F17041CB1007A4F04 /* SecondViewController.xib in Resources */,
 				8618315E170571E500638985 /* ThirdViewController.xib in Resources */,
 				861831601705727200638985 /* SampleList.plist in Resources */,
+				86C87DF61709688A00D571EC /* FourthViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +234,7 @@
 				86D7329E17041CB1007A4F04 /* SecondViewController.m in Sources */,
 				86183159170568E100638985 /* TestOperation.m in Sources */,
 				8618315D170571E500638985 /* ThirdViewController.m in Sources */,
+				86C87DF51709688A00D571EC /* FourthViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

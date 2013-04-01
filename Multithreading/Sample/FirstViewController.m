@@ -93,40 +93,10 @@
     dispatch_sync(bgQueue, ^{
         stringValue = @"完成了";
     });
-    NSLog(@"%@",stringValue);
-    
-    
-    //dispatch group
-    NSArray *array = [[NSArray alloc] initWithObjects:@"abc",@"def",@"abba",@"cddc", nil];
-    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-//    dispatch_group_t group = dispatch_group_create();
-//    for(NSString *obj in array)
-//        dispatch_group_async(group, queue, ^{
-//            [self doSomethingIntensiveWith:obj];
-//        });
-//    dispatch_group_notify(group, queue, ^{
-//        [self doSomethingWith:array];
-//    });
-//    dispatch_release(group);
-//    
-//    [self doSomethingWith:array];
-    
-    dispatch_async(queue, ^{
-        dispatch_apply([array count], queue, ^(size_t index){
-            [self doSomethingIntensiveWith:[array objectAtIndex:index]];
-        });
-        [self doSomethingWith:array];
-    });*/
+    NSLog(@"%@",stringValue);*/
+
     
     queue = dispatch_queue_create("SumBlocks", NULL);
-}
-
-- (void)doSomethingIntensiveWith:(NSString *)str {
-    NSLog(@"intensive with %@",str);
-}
-
-- (void)doSomethingWith:(NSArray *)array {
-    NSLog(@"全部遍历执行结束");
 }
 
 
