@@ -9,6 +9,7 @@
 #import "MainViewController.h"
 #import "FirstViewController.h"
 #import "SecondViewController.h"
+#import "ThirdViewController.h"
 
 @interface MainViewController ()
 
@@ -22,6 +23,9 @@
     if (self) {
         // Custom initialization
         self.title = @"m";
+        
+        NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"SampleList" ofType:@"plist"];
+        sampleList = [NSArray arrayWithContentsOfFile:plistPath];
     }
     return self;
 }
@@ -35,6 +39,8 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,7 +58,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 2;
+    return [sampleList count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -64,16 +70,7 @@
         cell.textLabel.font = [UIFont systemFontOfSize:15.];
     }
     
-    switch (indexPath.row) {
-        case 0:
-            cell.textLabel.text = @"B等待A结束,dispatch,semaphore";
-            break;
-        case 1:
-            cell.textLabel.text = @"NSOperationQueue,NSInvocationOperation";
-            break;
-        default:
-            break;
-    }
+    cell.textLabel.text = [[sampleList objectAtIndex:indexPath.row] objectAtIndex:1];
     
     return cell;
 }
@@ -84,16 +81,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     id viewController = nil;
-    switch (indexPath.row) {
-        case 0:
-            viewController = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
-            break;
-        case 1:
-            viewController = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
-            break;
-        default:
-            break;
-    }
+    NSString *className = [[sampleList objectAtIndex:indexPath.row] objectAtIndex:0];
+    Class class = NSClassFromString(className);
+    viewController = [[class alloc] initWithNibName:className bundle:nil];
     [self.navigationController pushViewController:viewController animated:YES];
 }
 

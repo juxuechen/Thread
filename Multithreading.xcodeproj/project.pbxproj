@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		86183159170568E100638985 /* TestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 86183158170568E100638985 /* TestOperation.m */; };
+		8618315D170571E500638985 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8618315B170571E500638985 /* ThirdViewController.m */; };
+		8618315E170571E500638985 /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8618315C170571E500638985 /* ThirdViewController.xib */; };
+		861831601705727200638985 /* SampleList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8618315F1705727200638985 /* SampleList.plist */; };
 		867B965B151AC83400A3E55A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867B965A151AC83400A3E55A /* QuartzCore.framework */; };
 		86D73293170419E6007A4F04 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D73291170419E6007A4F04 /* MainViewController.m */; };
 		86D73294170419E6007A4F04 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86D73292170419E6007A4F04 /* MainViewController.xib */; };
@@ -28,6 +31,10 @@
 /* Begin PBXFileReference section */
 		86183157170568E100638985 /* TestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestOperation.h; sourceTree = "<group>"; };
 		86183158170568E100638985 /* TestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestOperation.m; sourceTree = "<group>"; };
+		8618315A170571E500638985 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		8618315B170571E500638985 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		8618315C170571E500638985 /* ThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
+		8618315F1705727200638985 /* SampleList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SampleList.plist; sourceTree = "<group>"; };
 		867B965A151AC83400A3E55A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		86D73290170419E6007A4F04 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		86D73291170419E6007A4F04 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
@@ -79,6 +86,9 @@
 				86D7329D17041CB1007A4F04 /* SecondViewController.xib */,
 				86183157170568E100638985 /* TestOperation.h */,
 				86183158170568E100638985 /* TestOperation.m */,
+				8618315A170571E500638985 /* ThirdViewController.h */,
+				8618315B170571E500638985 /* ThirdViewController.m */,
+				8618315C170571E500638985 /* ThirdViewController.xib */,
 			);
 			path = Sample;
 			sourceTree = "<group>";
@@ -119,6 +129,7 @@
 				86D73290170419E6007A4F04 /* MainViewController.h */,
 				86D73291170419E6007A4F04 /* MainViewController.m */,
 				86D73292170419E6007A4F04 /* MainViewController.xib */,
+				8618315F1705727200638985 /* SampleList.plist */,
 				86D7329517041C91007A4F04 /* Sample */,
 				86DD917E1517197400EDF822 /* MultithreadingSecondViewController.h */,
 				86DD917F1517197400EDF822 /* MultithreadingSecondViewController.m */,
@@ -194,6 +205,8 @@
 				86D73294170419E6007A4F04 /* MainViewController.xib in Resources */,
 				86D7329A17041C91007A4F04 /* FirstViewController.xib in Resources */,
 				86D7329F17041CB1007A4F04 /* SecondViewController.xib in Resources */,
+				8618315E170571E500638985 /* ThirdViewController.xib in Resources */,
+				861831601705727200638985 /* SampleList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +224,7 @@
 				86D7329917041C91007A4F04 /* FirstViewController.m in Sources */,
 				86D7329E17041CB1007A4F04 /* SecondViewController.m in Sources */,
 				86183159170568E100638985 /* TestOperation.m in Sources */,
+				8618315D170571E500638985 /* ThirdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

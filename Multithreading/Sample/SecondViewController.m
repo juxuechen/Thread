@@ -20,6 +20,8 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        queue = [[NSOperationQueue alloc] init];
+        [queue setMaxConcurrentOperationCount:5];
     }
     return self;
 }
@@ -35,8 +37,6 @@
     
     serialNumber = 1;
     
-    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
-    [queue setMaxConcurrentOperationCount:5];
     for (int j = 1; j <= 20; j++) {
         TestOperation *op = [[TestOperation alloc] initWithTarget:self selector:@selector(addView:) object:[NSNumber numberWithInt:j]];
         op.i = j;
@@ -66,6 +66,12 @@
     serialNumber++;
     
     NSLog(@"updateui %@",label);
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    [queue cancelAllOperations];
 }
 
 - (void)didReceiveMemoryWarning

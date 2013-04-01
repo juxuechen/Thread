@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SecondViewController : UIViewController {
+    NSOperationQueue *queue;
     int   serialNumber;
 }
 

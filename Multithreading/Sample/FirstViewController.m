@@ -55,56 +55,6 @@
     // e.g. self.myOutlet = nil;
 }
 
-- (void)methodF:(id)sender {
-    NSLog(@"1 log  %d",i);
-    
-    [codition lock];
-    while (i == 0)
-        [codition wait];
-    NSLog(@"3 wait over log  %d",i);
-    i++; 
-    // Do real work here.
-    [codition unlock];
-}
-
-- (void)methodS:(id)sender {
-//    @synchronized(sender)
-//    {
-//        NSLog(@"i=%d,%@",i++,sender);
-//    }
-    NSLog(@"2 my  %d",i);
-    [codition lock];
-    [NSThread sleepForTimeInterval:0.5];
-    i++;
-    [codition signal];
-    [codition unlock];
-}
-
-
-- (void)treadObserver {
-    NSLog(@"thread change");
-}
-
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self 
-                                             selector:@selector(treadObserver) 
-                                                 name:NSWillBecomeMultiThreadedNotification 
-                                               object:nil];
-    
-    //[NSThread detachNewThreadSelector:@selector(log:) toTarget:self withObject:nil];
-    
-    NSThread *fr = [[NSThread alloc] initWithTarget:self selector:@selector(methodF:) object:@"fr"];
-    NSThread *sr = [[NSThread alloc] initWithTarget:self selector:@selector(methodS:) object:@"sr"];
-    [fr start];
-    [sr start];
-    
-}
-
-
 
 - (void)viewDidAppear:(BOOL)animated
 {
