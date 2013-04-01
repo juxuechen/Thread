@@ -41,9 +41,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    i = 0;
-    codition = [[NSCondition alloc] init];
-    
     self.waitingView.hidden = YES;
     [self.activityView startAnimating];
 }

@@ -12,7 +12,7 @@
 	</array>
 	<array>
 		<string>ThirdViewController</string>
-		<string>codition</string>
+		<string>NSCodition,生产者和消费者</string>
 	</array>
 </array>
 </plist>

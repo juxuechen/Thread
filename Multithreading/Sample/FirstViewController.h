@@ -9,9 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface FirstViewController : UIViewController {
-    int i;
-    NSCondition *codition;
-    
     __block dispatch_semaphore_t sem;
     dispatch_queue_t queue;
 }

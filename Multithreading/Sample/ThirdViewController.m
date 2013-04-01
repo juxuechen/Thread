@@ -35,34 +35,55 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)updateLabelText:(NSString *)string {
+    self.label.text = [self.label.text stringByAppendingString:string];
+}
+
 - (void)createConsumer {
-    self.label.text = [NSString stringWithFormat:@"消费者：得锁，i=%d",i];
+    [self performSelectorOnMainThread:@selector(updateLabelText:)
+                           withObject:[NSString stringWithFormat:@"消费者：得锁，i=%d",i]
+                        waitUntilDone:NO];
     [codition lock];
     
     while (i == 0) {
-         NSLog(@"等待生产者");
+//         NSLog(@"等待生产者");
         [codition wait];
     }
 
-    self.label.text = [self.label.text stringByAppendingFormat:@"\n消费者：等待结束，i=%d",i];
+    [self performSelectorOnMainThread:@selector(updateLabelText:)
+                           withObject:[NSString stringWithFormat:@"\n消费者：等待结束，i=%d",i]
+                        waitUntilDone:NO];
 
-    self.label.text = [self.label.text stringByAppendingString:@"\n消费者：解锁"];
+    [self performSelectorOnMainThread:@selector(updateLabelText:)
+                           withObject:[NSString stringWithFormat:@"\n消费者：解锁"]
+                        waitUntilDone:NO];
     [codition unlock];
 }
 
 - (void)createProducer {
-    self.label.text = [self.label.text stringByAppendingFormat:@"\n生产者：得锁，i=%d",i];
+    [self performSelectorOnMainThread:@selector(updateLabelText:)
+                           withObject:[NSString stringWithFormat:@"\n生产者：得锁，i=%d",i]
+                        waitUntilDone:NO];
     [codition lock];
     
-    self.label.text = [self.label.text stringByAppendingFormat:@"\n生产者：生产需要2秒钟，i=%d",i];
+    [self performSelectorOnMainThread:@selector(updateLabelText:)
+                           withObject:[NSString stringWithFormat:@"\n生产者：生产需要2秒钟，i=%d",i]
+                        waitUntilDone:NO];
     [NSThread sleepForTimeInterval:2.0];
-    i++;
-    self.label.text = [self.label.text stringByAppendingFormat:@"\n生产者：生产完毕，i=%d",i];
     
-    self.label.text = [self.label.text stringByAppendingFormat:@"\n生产者：发signal，唤醒wait的消费者（线程），i=%d",i];
+    i++;
+    [self performSelectorOnMainThread:@selector(updateLabelText:)
+                           withObject:[NSString stringWithFormat:@"\n生产者：生产完毕，i=%d",i]
+                        waitUntilDone:NO];
+
+    [self performSelectorOnMainThread:@selector(updateLabelText:)
+                           withObject:[NSString stringWithFormat:@"\n生产者：发signal，唤醒wait的消费者（线程），i=%d",i]
+                        waitUntilDone:NO];
     [codition signal];
     
-    self.label.text = [self.label.text stringByAppendingString:@"\n生产者：解锁"];
+    [self performSelectorOnMainThread:@selector(updateLabelText:)
+                           withObject:[NSString stringWithFormat:@"\n生产者：解锁"]
+                        waitUntilDone:NO];
     [codition unlock];
 }
 

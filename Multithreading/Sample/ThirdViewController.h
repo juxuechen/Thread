@@ -11,7 +11,6 @@
 @interface ThirdViewController : UIViewController {
     int i;
     NSCondition *codition;
-//实现多线程同步
 }
 
 @property (nonatomic,strong) IBOutlet UILabel *label;
